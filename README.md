@@ -1,3 +1,2 @@
 # ProgUzytkowe
-siemanko 
-no co tam
+Rozwiązane kolokwium z LaTeXa
