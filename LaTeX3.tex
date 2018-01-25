@@ -1,0 +1,114 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage[pdftex]{hyperref}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{amsmath} %pakiet matematyczny
+\usepackage{amssymb} %pakiet dodatkowych symboli
+\title{Kolokiwum z Latex'a}
+\date{18 stycznia 2017}					%%DATA , AUTOR%%
+\author{David Ruszkowski}
+
+\begin{document}
+\maketitle    						%%STRONA TUTU£OWA%%
+\tableofcontents					%%SPIS TREŒCI%%
+
+
+
+
+\section{Sieæ neuronowa}			%%PODZIA£ PDF-A NA SEKCJE...%%	
+MIEJSCE NA TEKST
+	\subsection{Typy sieci neuronowych} %%..PODSEKCJE%%
+																		
+\begin{enumerate}[A)]					%%NUMERACJA TYPU A), inne:(a),i),I),1,..)%%
+\item Sieci jakieœ tam
+\item Sieci rekurencyjne 
+\begin{description}					%%PUNKTOWANIE JAKIE CHCEMY-->[...]%%
+\item[i.]sieæ Hopfielda 
+\item[ii.]maszyna Boltzmanna
+\end{description}  
+\end{enumerate}
+
+	\subsection{Zastosowania}
+		\subsubsection{Przyk³ady wykorzystania}			%%PODPODSEKCJA%%
+
+
+
+\newpage
+\section{Wzory matematyczne}
+
+	\begin{equation}						%%equation- TRYB MATEMAYCZNY%%
+	\sum_{n=1}^{\infty}aq^{n-1}= \frac{a}{1-q}. 
+	\label{eq:rownanie1}		%%ODWO£ANIE-->zeby wywo³aæ \ref{eq:równianie}%%
+	\end{equation}
+	
+	\begin{equation}
+	g^{\epsilon,cd}_{r_{gran}}(u)\not =\{v\in TRN; \frac{|IND_{\epsilon}(u,v)|}{|A|}\geq r_{gran}and\ d(u) = d(v)\} 
+	\label{eq:rownanie2}
+	\end{equation}
+	
+	$$If|g^{\epsilon,cd}_{r_{gran}}(x_{i})|=n\ then,$$ 		%%$$KOLEJNY TRYB MATEMATYCZNY $$..$$%%
+	\begin{equation}																														%%¯EBY WYWO£AÆ TRYB MATEMATYCZNY W TEKŒCIE WYSTARCZY POJEDYÑCZO $..$%%
+	g^{\epsilon,cd}_{r_{gran}}(x_{i})=\left(\begin{array}{cccc}
+	a_{1} & a_{2} & \ldots &a_{m}(x_{1})\\ 
+	a_{1} & a_{2} & \ldots &a_{m}(x_{1})\\ 
+	\ldots & \ldots & \ldots & \ldots \\ 
+	a_{1} & a_{2} & \ldots &a_{m}(x_{1})
+	\end{array}\right)
+	\label{eq:rownanie3}
+	\end{equation}
+	
+	\paragraph{}Wroñskian				%%PARAGRAF - raczej zbêdne%%
+	\begin{equation}
+	F(f_{1},f_{2},\ldots,f_{n})=\left[\begin{array}{cccc}			%%przestrzeñ array-- podobne dzia³anie jak w tabelach. {ccc..}-liczba kolumn(c-oznacza wyœrodkowanie)%%
+	f_{1}&f_{2}&\ldots&f_{n}\\
+	f^{'}_{1}&f^{'}_{2}&\ldots&f^{'}_{n}\\
+	\vdots & \vdots & \ddots & \vdots \\ 
+	f^{n-1}_{1}&f^{n-1}_{2}&\ldots&f^{n-1}_{n}
+	\end{array}\right]
+	\label{eq:rownanie4}
+	\end{equation}
+	
+	
+
+	
+\section{Tabele i rysunki}
+
+\begin{table}[h]
+\begin{tabular}{lccccccc}
+Team & P & W & D & L & F & A & Pts\\
+\hline
+Manchester United & 6&4&0&2&10&5&12\\
+Celtic & 6&4&0&2&10&5&12\\
+Benfica & 6&4&0&2&10&5&12\\
+FC Copenhagen & 6&4&0&2&10&5&12\\
+\end{tabular}
+\end{table}
+
+\begin{figure}[!ht]
+\vspace{0pt}
+\includegraphics[scale=0.3]{Neuralnetwork.eps}
+\includegraphics[scale=0.5]{Neuralnetwork1.eps}
+\vspace{0pt}
+\caption{Funkcja b³êdu dla liniowego Neurona}			%%tytu³ tabeli, b¹dz obrazu%%
+\end{figure}
+
+
+
+
+\newpage
+\section{Bibliografia}
+
+Prace [1, 2] przedstawiaj¹ sposoby wyci¹gania wiedzy z macierzy DNA, po-
+nadto b³¹d uczenia sieci neuronowej zobrazowany jest na rysunku 1
+
+\begin{thebibliography}{4}				%%BIBLIGRAFIA%%
+\bibitem{brown}
+\bibitem{Eisen}
+\bibitem{furey}
+\bibitem{zadeh}
+\end{thebibliography}
+
+\end{document}
